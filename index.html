@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An educational guide to anterior tooth fractures, their classification, clinical features, management and prevention.">
+<title>Anterior Tooth Fracture | Dental Guide</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --navy: #102b46;
+  --blue: #176b87;
+  --teal: #22a69a;
+  --pink: #f47791;
+  --cream: #f7f9fc;
+  --white: #ffffff;
+  --muted: #64758a;
+  --shadow: 0 12px 35px rgba(16,43,70,.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--navy);
+  line-height: 1.7;
+}
+
+a { text-decoration: none; color: inherit; }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(15px);
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 20px rgba(0,0,0,.04);
+}
+
+.logo {
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo span { color: var(--teal); }
+
+.navlinks {
+  display: flex;
+  gap: 23px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.navlinks a:hover { color: var(--teal); }
+
+.hero {
+  min-height: 540px;
+  padding: 100px 8%;
+  background: linear-gradient(120deg,#102b46,#175a78 65%,#168f91);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.hero-content { max-width: 680px; }
+
+.tag {
+  display: inline-block;
+  background: rgba(255,255,255,.13);
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 30px;
+  padding: 7px 17px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(38px,6vw,70px);
+  line-height: 1.08;
+  margin: 24px 0;
+  letter-spacing: -3px;
+}
+
+.hero h1 span { color: #7de0d1; }
+
+.hero p {
+  max-width: 550px;
+  color: #d5e7ef;
+  font-size: 16px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #7de0d1;
+  color: #102b46;
+  padding: 14px 25px;
+  border-radius: 9px;
+  font-weight: 800;
+  transition: .3s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-4px);
+  background: white;
+}
+
+.hero-art {
+  font-size: 155px;
+  filter: drop-shadow(0 20px 20px rgba(0,0,0,.2));
+}
+
+section { padding: 85px 8%; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading small {
+  color: var(--teal);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(27px,4vw,39px);
+  margin-top: 8px;
+  letter-spacing: -1.3px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: 10px auto;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid #eaf0f5;
+}
+
+.card h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+.card p { color: var(--muted); }
+
+.highlight {
+  background: linear-gradient(145deg,#e4f7f4,#edf6ff);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.stat {
+  background: white;
+  border-radius: 13px;
+  padding: 18px 10px;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  color: var(--teal);
+  font-size: 23px;
+}
+
+.stat span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e9eef4;
+  box-shadow: var(--shadow);
+  transition: .3s;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--teal);
+}
+
+.info-card .emoji { font-size: 29px; }
+
+.info-card h3 { margin: 12px 0 7px; }
+
+.info-card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.check-list {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.check-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #edf1f5;
+  color: #43566b;
+  font-size: 14px;
+}
+
+.check-list li::before {
+  content: "✓";
+  color: var(--teal);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.dark-section {
+  background: #102b46;
+  color: white;
+}
+
+.dark-section .section-heading p { color: #c1d1df; }
+
+.dark-section .section-heading small { color: #7de0d1; }
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+}
+
+.class-card {
+  background: #1c3b57;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #35536c;
+  transition: .3s;
+}
+
+.class-card:hover {
+  background: #24516a;
+  transform: translateY(-5px);
+}
+
+.class-number {
+  font-size: 30px;
+  color: #7de0d1;
+  font-weight: 800;
+}
+
+.class-card h3 { margin: 8px 0; }
+
+.class-card p {
+  color: #c6d8e5;
+  font-size: 14px;
+}
+
+.steps {
+  max-width: 850px;
+  margin: auto;
+}
+
+.step {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 18px;
+  background: white;
+  padding: 23px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.step-number {
+  min-width: 43px;
+  height: 43px;
+  background: #dcf6f1;
+  color: #138c7c;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.step p { color: var(--muted); font-size: 14px; }
+
+.prevention {
+  background: linear-gradient(130deg,#e2f6f1,#eef3ff);
+}
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.outcome {
+  background: white;
+  padding: 28px;
+  border-radius: 17px;
+  box-shadow: var(--shadow);
+}
+
+.outcome h3 { margin-bottom: 15px; }
+
+.original {
+  background: white;
+  text-align: center;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 30px auto 0;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+footer {
+  background: #0b2035;
+  color: white;
+  padding: 45px 8%;
+  text-align: center;
+}
+
+footer p {
+  color: #aebfce;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+footer strong { color: #7de0d1; }
+
+@media(max-width:800px) {
+  .navlinks {
+    gap: 12px;
+    font-size: 11px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .hero { padding: 75px 7%; }
+  .hero-art { font-size: 90px; }
+  .grid,.class-grid { grid-template-columns: repeat(2,1fr); }
+  .intro-grid { grid-template-columns: 1fr; }
+}
+
+@media(max-width:550px) {
+  nav { padding: 13px 5%; }
+  .logo { font-size: 17px; }
+  .navlinks { max-width: 65%; }
+  .hero { min-height: 470px; }
+  .hero-art { display: none; }
+  section { padding: 65px 6%; }
+  .grid,.class-grid,.outcome-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .card { padding: 23px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">DENTAL<span>CARE.</span></div>
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#classification">Classification</a>
+    <a href="#management">Treatment</a>
+    <a href="#prevention">Prevention</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <span class="tag">DENTAL EDUCATION • CLINICAL GUIDE</span>
+    <h1>Anterior Tooth <span>Fracture.</span></h1>
+    <p>
+      Understanding traumatic injuries of the anterior teeth,
+      from clinical presentation and classification to
+      diagnosis, treatment and long-term prognosis.
+    </p>
+    <a href="#about" class="hero-btn">Explore the Guide →</a>
+  </div>
+  <div class="hero-art">🦷</div>
+</header>
+
+<section id="about">
+  <div class="section-heading">
+    <small>01 / Introduction</small>
+    <h2>Understanding Anterior Tooth Fractures</h2>
+    <p>An overview of one of the common forms of dental traumatic injury.</p>
+  </div>
+
+  <div class="intro-grid">
+    <div class="card">
+      <h3>What is an anterior tooth fracture?</h3>
+      <p>
+        An anterior tooth fracture is a break or structural injury
+        involving the front teeth, particularly the maxillary
+        central incisors. Due to their prominent position, these
+        teeth are vulnerable to traumatic impacts.
+      </p>
+      <br>
+      <p>
+        Depending on the severity, the fracture may involve enamel,
+        dentin, cementum or the dental pulp. Prompt assessment is
+        important to protect tooth function and appearance.
+      </p>
+    </div>
+    <div class="card highlight">
+      <h3>Why does it matter?</h3>
+      <p>
+        Anterior teeth contribute to aesthetics, speech and
+        biting function. Appropriate diagnosis and treatment
+        can help preserve the natural tooth.
+      </p>
+      <div class="stats">
+        <div class="stat"><strong>9</strong><span>Classification classes</span></div>
+        <div class="stat"><strong>3</strong><span>Main hard tissues</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-heading">
+    <small>02 / Clinical assessment</small>
+    <h2>Clinical Features</h2>
+    <p>Common findings that may be identified during dental examination.</p>
+  </div>
+
+  <div class="grid">
+    <div class="info-card"><span class="emoji">🦷</span><h3>Pain</h3><p>Pain or sensitivity, particularly while biting.</p></div>
+    <div class="info-card"><span class="emoji">🔴</span><h3>Swelling</h3><p>Soft tissue swelling around the affected region.</p></div>
+    <div class="info-card"><span class="emoji">🩸</span><h3>Bleeding</h3><p>Bleeding from the gingival or surrounding tissues.</p></div>
+    <div class="info-card"><span class="emoji">🔍</span><h3>Tooth Mobility</h3><p>Abnormal mobility may indicate associated injury.</p></div>
+    <div class="info-card"><span class="emoji">⚪</span><h3>Discoloration</h3><p>Changes in tooth colour may develop following trauma.</p></div>
+    <div class="info-card"><span class="emoji">⚠️</span><h3>Pulp Exposure</h3><p>Deeper fractures may expose the dental pulp.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-heading">
+    <small>03 / Risk assessment</small>
+    <h2>Causes & Predisposing Factors</h2>
+    <p>Trauma can occur in different everyday environments and activities.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Common Causes</h3>
+      <ul class="check-list">
+        <li>Falls and accidental impacts</li>
+        <li>Road traffic accidents</li>
+        <li>Sports-related injuries</li>
+        <li>Physical collisions</li>
+        <li>Biting hard objects</li>
+        <li>Playground accidents</li>
+        <li>Occupational trauma</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Predisposing Factors</h3>
+      <ul class="check-list">
+        <li>Increased overjet</li>
+        <li>Class II malocclusion</li>
+        <li>Lip incompetence</li>
+        <li>Previous dental trauma</li>
+        <li>Bruxism and parafunctional habits</li>
+        <li>Developmental dental defects</li>
+        <li>Sports without protective equipment</li>
+      </ul>
+    </div>
+    <div class="card highlight">
+      <h3>Remember</h3>
+      <p>
+        The severity of an injury depends on the direction,
+        intensity and location of impact, as well as the
+        condition of the tooth and supporting structures.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="classification">
+  <div class="section-heading">
+    <small>04 / Dental classification</small>
+    <h2>Ellis and Davey Classification</h2>
+    <p>A commonly taught classification of traumatic injuries to anterior teeth.</p>
+  </div>
+
+  <div class="class-grid">
+    <div class="class-card"><div class="class-number">01</div><h3>Class I</h3><p>Fracture involving enamel only.</p></div>
+    <div class="class-card"><div class="class-number">02</div><h3>Class II</h3><p>Fracture involving enamel and dentin without pulp exposure.</p></div>
+    <div class="class-card"><div class="class-number">03</div><h3>Class III</h3><p>Fracture involving enamel and dentin with pulp exposure.</p></div>
+    <div class="class-card"><div class="class-number">04</div><h3>Class IV</h3><p>Traumatic loss of the crown, with a non-vital tooth.</p></div>
+    <div class="class-card"><div class="class-number">05</div><h3>Class V</h3><p>Tooth avulsion or complete displacement from its socket.</p></div>
+    <div class="class-card"><div class="class-number">06</div><h3>Class VI</h3><p>Fracture involving the root of the tooth.</p></div>
+    <div class="class-card"><div class="class-number">07</div><h3>Class VII</h3><p>Displacement of the tooth without a fracture.</p></div>
+    <div class="class-card"><div class="class-number">08</div><h3>Class VIII</h3><p>Fracture involving the crown in a major segment.</p></div>
+    <div class="class-card"><div class="class-number">09</div><h3>Class IX</h3><p>Traumatic injuries involving deciduous teeth.</p></div>
+  </div>
+</section>
+
+<section id="management">
+  <div class="section-heading">
+    <small>05 / Clinical management</small>
+    <h2>Diagnosis & Treatment</h2>
+    <p>A structured approach to evaluating and managing dental trauma.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">01</div>
+      <div><h3>Initial Assessment</h3><p>Review the history of trauma, examine soft tissues, tooth structure, mobility and occlusion.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-number">02</div>
+      <div><h3>Clinical Investigations</h3><p>Use appropriate dental radiographs and pulp sensibility tests as indicated.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-number">03</div>
+      <div><h3>Pain Management</h3><p>Provide appropriate pain relief and assess associated soft tissue injuries.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-number">04</div>
+      <div><h3>Restorative Treatment</h3><p>Depending on the injury, treatment may include bonding, composite restoration, pulp therapy, root canal treatment or other specialist procedures.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-number">05</div>
+      <div><h3>Follow-up</h3><p>Monitor healing, pulp status, tooth colour, mobility and surrounding tissues over time.</p></div>
+    </div>
+  </div>
+
+  <div class="section-heading" style="margin-top:65px">
+    <h2>Key Clinical Investigations</h2>
+  </div>
+  <div class="grid">
+    <div class="info-card"><span class="emoji">🩻</span><h3>IOPA Radiograph</h3><p>Evaluates root structure and surrounding periapical tissues.</p></div>
+    <div class="info-card"><span class="emoji">🔬</span><h3>Pulp Sensibility Test</h3><p>Assesses the response of the pulp to appropriate testing.</p></div>
+    <div class="info-card"><span class="emoji">📷</span><h3>Clinical Photography</h3><p>Documents the initial injury and subsequent changes.</p></div>
+  </div>
+</section>
+
+<section class="prevention" id="prevention">
+  <div class="section-heading">
+    <small>06 / Prevention</small>
+    <h2>Protect Your Smile</h2>
+    <p>Simple precautions can reduce the risk of traumatic dental injuries.</p>
+  </div>
+
+  <div class="grid">
+    <div class="info-card"><span class="emoji">🥊</span><h3>Sports Protection</h3><p>Wear a properly fitted mouthguard during contact sports.</p></div>
+    <div class="info-card"><span class="emoji">🚗</span><h3>Seatbelts</h3><p>Always use seatbelts while travelling.</p></div>
+    <div class="info-card"><span class="emoji">🏠</span><h3>Safe Environment</h3><p>Reduce fall hazards and supervise young children.</p></div>
+    <div class="info-card"><span class="emoji">🍎</span><h3>Food Awareness</h3><p>Avoid biting excessively hard objects or using teeth as tools.</p></div>
+    <div class="info-card"><span class="emoji">🦷</span><h3>Dental Checkups</h3><p>Maintain regular dental examinations.</p></div>
+    <div class="info-card"><span class="emoji">👨‍👩‍👧</span><h3>Parental Supervision</h3><p>Encourage safe play and age-appropriate activities.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-heading">
+    <small>07 / Long-term outcome</small>
+    <h2>Complications & Prognosis</h2>
+  </div>
+
+  <div class="outcome-grid">
+    <div class="outcome">
+      <h3>⚠️ Possible Complications</h3>
+      <ul class="check-list">
+        <li>Pulp necrosis</li>
+        <li>Infection and abscess formation</li>
+        <li>Tooth discoloration</li>
+        <li>Root resorption</li>
+        <li>Ankylosis in certain injuries</li>
+        <li>Loss of tooth structure</li>
+      </ul>
+    </div>
+    <div class="outcome">
+      <h3>✓ Prognosis</h3>
+      <ul class="check-list">
+        <li>Depends on the extent of injury</li>
+        <li>Early diagnosis is important</li>
+        <li>Appropriate treatment improves outcomes</li>
+        <li>Regular clinical follow-up is essential</li>
+        <li>Pulp and periodontal health should be monitored</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="original">
+  <div class="section-heading">
+    <small>08 / Visual reference</small>
+    <h2>Original Educational Infographic</h2>
+    <p>Explore the original reference poster used for this educational website.</p>
+  </div>
+  <img class="poster" src="poster.jpg" alt="Anterior tooth fracture educational infographic">
+</section>
+
+<footer>
+  <h2>DENTAL<span style="color:#7de0d1">CARE.</span></h2>
+  <p>Anterior Tooth Fracture | Educational Dental Project</p>
+  <p>GROUP A</p>
+  <p>Aakash Das • Afsha Begum • Ahmadulla Sk • Ajijur Rahaman</p>
+  <p>Jayanti Mondal • Anushka Marodia</p>
+  <br>
+  <p>Educational content only. Clinical diagnosis and treatment must be guided by a qualified dental professional.</p>
+  <p>© 2026 Dental Education Project</p>
+</footer>
+
+</body>
+      </html>
+      
